@@ -11,7 +11,7 @@ public class Controller {
 	@FXML
 	private Button tlacitko;	
 	@FXML
-	private TextField vysledek;
+	private Label vysledek;
 	@FXML
 	private Label vypocet;
 	@FXML
@@ -47,8 +47,7 @@ public class Controller {
 		procento.setDisable(true);
 		MR.setDisable(true);
 		MC.setDisable(true);
-		vysledek.setDisable(true);
-		
+	
 	}
 
 	public void vypisTextNaTlacitku(ActionEvent event) {
