@@ -1,0 +1,24 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#tlacitko{
+	-fx-font-size: 20px;
+	-fx-background-color: rgba(255, 255, 255, .80);
+	-fx-text-fill: blue;
+	-fx-padding: 6 6 6 6;
+	-fx-border-radius: 8;
+}
+
+.button{
+    -fx-text-fill: rgb(49, 89, 23);
+    -fx-border-color: rgb(49, 89, 23);
+    -fx-border-radius: 5;
+    -fx-padding: 3 6 6 6;
+}
+
+#mocnina{
+	-fx-font-size: 15px;
+	-fx-background-color: rgba(255, 255, 255, .80);
+	-fx-text-fill: blue;
+	-fx-padding: 6 6 6 6;
+	-fx-border-radius: 2;
+}
