@@ -40,7 +40,7 @@ public class Controller {
 	private boolean desetinnaCarka = false;
 	
 	public void initialize() {
-		plusMinus.setDisable(true);
+		//plusMinus.setDisable(true);
 		odmocnina.setDisable(true);
 		prevracena.setDisable(true);
 		b.setDisable(true);
@@ -60,6 +60,11 @@ public class Controller {
 	}
 
 	public void spocti(ActionEvent event) {
+		vypocitej();
+
+	}
+	
+	private void vypocitej() {
 		if (operace == null || operace.isEmpty()) {
 			vypocet.setText(cislo1 + "=");
 			vysledek.setText("" + cislo1);
@@ -91,7 +96,6 @@ public class Controller {
 		desetinnaCarka = false;
 		zadavaseDalsiOperator = false;
 		cislo2 = 0;
-
 	}
 
 	public void stiskCiselnehoTlacitka(ActionEvent event) {
@@ -199,6 +203,17 @@ public class Controller {
 	public void zpracujM(ActionEvent event) {
 
 	}
+	
+	public void stiskPlusMinus(ActionEvent event) {
+		if (zadavasePrvniCislo) {
+			cislo1=cislo1*(-1);
+			vysledek.setText(""+cislo1);
+		} else {
+			cislo2=cislo2*(-1);
+			vysledek.setText(""+cislo2);
+		}
+		
+	}
 
 	public void stiskKlavesy(KeyEvent event) {
 		String stisknutaKlavesa = event.getText();
@@ -225,6 +240,9 @@ public class Controller {
 			case "*":
 			case "/":
 				ulozOperaci(stisknutaKlavesa);
+				break;
+			case "=":
+				vypocitej();
 				break;
 
 		}
