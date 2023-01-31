@@ -237,14 +237,13 @@ public class Controller {
 				break;
 			case "-":
 			case "+":
-			case "*":
 			case "/":
+			case "*":
 				ulozOperaci(stisknutaKlavesa);
 				break;
 			case "=":
 				vypocitej();
 				break;
-
 		}
 	}
 	
