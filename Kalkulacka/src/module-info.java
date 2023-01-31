@@ -12,4 +12,5 @@ module Kalkulacka {
 	requires javafx.base;
 	opens v1_zakladniPoctyCelociselne to javafx.graphics, javafx.fxml;
 	opens v2_zakladniPoctyCelociselneADalsiKlavesy to javafx.graphics, javafx.fxml;
+	opens cele to javafx.graphics, javafx.fxml;
 }
